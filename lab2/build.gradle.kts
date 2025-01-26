@@ -3,8 +3,7 @@ plugins {
     application
 }
 
-
-group = "org.lab1"
+group = "org.example"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -19,15 +18,18 @@ dependencies {
     implementation("org.postgresql:postgresql:42.2.18") // Зависимость для PostgreSQL
 }
 
-
-application {
-    mainClass.set("org.lab1.App")
-}
-
 tasks.test {
     useJUnitPlatform()
 }
-
 kotlin {
     jvmToolchain(11)
+}
+
+application {
+    mainClass.set("org.lab2.App")
+}
+
+
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
 }
