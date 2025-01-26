@@ -26,7 +26,7 @@ kotlin {
 }
 
 application {
-    mainClass.set("org.lab3.client.CarServiceClientCLI") //org.lab2.client.CarServiceClientCLI
+    mainClass.set("org.lab3.client.CarServiceClientCLI") //org.lab3.client.CarServiceClientCLI
 }
 
 

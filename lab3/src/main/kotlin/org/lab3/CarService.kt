@@ -1,4 +1,4 @@
-package org.lab2
+package org.lab3
 
 import com.sun.xml.ws.fault.SOAPFaultBuilder
 import java.sql.SQLException
